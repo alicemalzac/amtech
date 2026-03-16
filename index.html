@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Tech | Software Engineering & QA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span class="tag">&lt;</span><span class="white">AM</span><span class="cursor">|</span><span class="neon">Tech</span><span class="tag">&gt;</span>
+            </div>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato" class="btn-outline">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>Desenvolvimento de Software com <span class="neon">Precisão de QA.</span></h1>
+            <p>Construímos soluções digitais robustas, escaláveis e rigorosamente testadas para o mercado global.</p>
+            <div class="hero-btns">
+                <a href="#contato" class="btn-solid">Iniciar Projeto</a>
+                <a href="#portfolio" class="btn-text">Ver Portfólio ></a>
+            </div>
+        </section>
+
+        <section id="servicos" class="container">
+            <h2 class="section-title">&lt; Nossas Especialidades /&gt;</h2>
+            <div class="grid-services">
+                <div class="card">
+                    <h3>Full-Stack Web</h3>
+                    <p>Sites e aplicações web com o ecossistema JavaScript de ponta.</p>
+                </div>
+                <div class="card">
+                    <h3>Sistemas & ERPs</h3>
+                    <p>Automação de processos complexos e gestão de dados escalável.</p>
+                </div>
+                <div class="card">
+                    <h3>Engenharia & Otimização</h3>
+                    <p>Arquitetura de alta performance focada em eficiência e segurança.</p>
+                </div>
+                <div class="card">
+                    <h3>Quality Assurance</h3>
+                    <p>Testes automatizados e garantia de estabilidade absoluta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2 class="section-title">&lt; Cases de Sucesso /&gt;</h2>
+            <div class="portfolio-grid">
+                
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>ABA Climate Solutions</h3>
+                        <span class="status-badge">[ PROJETO ENTREGUE ]</span>
+                    </div>
+                    <p class="case-desc">Plataforma institucional premium com otimização avançada de performance e design responsivo, validado por um rigoroso processo de QA para uma consultoria ESG de alto nível.</p>
+                    <div class="tech-tags">
+                        <span class="tag-code">[ UI/UX Corporativo ]</span>
+                        <span class="tag-code">[ Alta Performance ]</span>
+                        <span class="tag-code">[ QA & Responsividade ]</span>
+                    </div>
+                    <a href="https://abasolutions.com.br/" target="_blank" class="btn-text case-link">Acessar Projeto ></a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>Êxodo Seguros</h3>
+                        <span class="status-badge">[ CASE DE SUCESSO ]</span>
+                    </div>
+                    <p class="case-desc">Ecossistema digital completo: site institucional integrado a um Sistema ERP proprietário escalável, blindado por testes de estresse para garantir segurança e zero quedas na operação da corretora.</p>
+                    <div class="tech-tags">
+                        <span class="tag-code">[ Full-Stack JS ]</span>
+                        <span class="tag-code">[ Dev de ERP ]</span>
+                        <span class="tag-code">[ Stress Testing ]</span>
+                    </div>
+                    <a href="#contato" class="btn-text case-link">Ver Detalhes da Arquitetura ></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="container">
+            <h2 class="section-title">&lt; Quem Somos /&gt;</h2>
+            <div class="about-content">
+                <p class="about-intro">A <strong>AM Tech</strong> é movida pela união de duas expertises complementares: o rigor da qualidade e o poder da inovação. Com processos e foco voltados para o mercado global, nossa missão é transformar desafios complexos em sistemas simples, inteligentes e altamente confiáveis.</p>
+                
+                <div class="profiles-grid">
+                    <div class="profile-card">
+                        <h3 class="neon">Alice Malzac</h3>
+                        <span class="tech-role">QA Analyst & JS Developer</span>
+                        <p>Traz em sua bagagem mais de 6 anos de experiência em Quality Assurance (QA) e 5 anos de desenvolvimento focado no ecossistema JavaScript. Seu olhar crítico garante que cada linha de código resulte em produtos estáveis, performáticos e à prova de falhas.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h3 class="neon">André Muniz</h3>
+                        <span class="tech-role">Software Engineer & Researcher</span>
+                        <p>Engenheiro Eletricista e Desenvolvedor com forte atuação na exigente indústria de fintechs. Como pesquisador e mestrando pela UFPE focado em métodos de otimização e aprendizado de máquina, traduz engenharia avançada em soluções escaláveis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="container">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="terminal-title">contact_form.js</span>
+                </div>
+                <form class="terminal-body" onsubmit="event.preventDefault(); alert('Briefing recebido com sucesso pela AM Tech!');">
+                    <div class="line"><span class="code-var">const</span> nome = <input type="text" placeholder="'Seu Nome'" required>;</div>
+                    <div class="line"><span class="code-var">const</span> empresa = <input type="text" placeholder="'Sua Empresa'" required>;</div>
+                    <div class="line"><span class="code-var">const</span> email = <input type="email" placeholder="'seu@email.com'" required>;</div>
+                    <div class="line"><span class="code-var">let</span> desafio = <textarea placeholder="'Descreva o escopo do projeto...'" required></textarea>;</div>
+                    <button type="submit" class="btn-execute">[ EXECUTAR ENVIO ]</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>location: <span class="silver">"Remote / Brazil (Global Ready)";</span></p>
+            <p>contact: <span class="silver">"hello@amtech.dev";</span></p>
+            <p class="copy">© 2026 AM Tech // All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
