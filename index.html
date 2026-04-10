@@ -108,21 +108,29 @@
             </div>
         </section>
 
-        <section id="contato" class="container">
-            <div class="terminal">
-                <div class="terminal-header">
-                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                    <span class="terminal-title">contact_form.js</span>
-                </div>
-                <form class="terminal-body" onsubmit="event.preventDefault(); alert('Briefing recebido com sucesso pela AM Tech!');">
-                    <div class="line"><span class="code-var">const</span> nome = <input type="text" placeholder="'Seu Nome'" required>;</div>
-                    <div class="line"><span class="code-var">const</span> empresa = <input type="text" placeholder="'Sua Empresa'" required>;</div>
-                    <div class="line"><span class="code-var">const</span> email = <input type="email" placeholder="'seu@email.com'" required>;</div>
-                    <div class="line"><span class="code-var">let</span> desafio = <textarea placeholder="'Descreva o escopo do projeto...'" required></textarea>;</div>
-                    <button type="submit" class="btn-execute">[ EXECUTAR ENVIO ]</button>
-                </form>
+<section id="contato" class="container">
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">contact_form.js</span>
+        </div>
+        <form action="https://formspree.io/f/xpqogbbz" method="POST" class="terminal-body">
+            <div class="line">
+                <span class="code-var">const</span> nome = 
+                <input type="text" name="name" placeholder="'Seu Nome'" required>;
             </div>
-        </section>
+            <div class="line">
+                <span class="code-var">const</span> email = 
+                <input type="email" name="email" placeholder="'seu@email.com'" required>;
+            </div>
+            <div class="line">
+                <span class="code-var">let</span> desafio = 
+                <textarea name="message" placeholder="'Descreva o escopo do projeto...'" required></textarea>;
+            </div>
+            <button type="submit" class="btn-execute">[ EXECUTAR ENVIO ]</button>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer>
